@@ -1,0 +1,23 @@
+{
+  "name": "universityProject",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "convert-excel-to-json": "^1.6.1",
+    "express": "^4.16.4",
+    "highcharts": "^8.0.0",
+    "highcharts-react-official": "^2.2.2",
+    "mongodb": "^3.5.3",
+    "react-widgets": "^4.4.11"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
