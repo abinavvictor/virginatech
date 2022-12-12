@@ -11,7 +11,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "convert-excel-to-json": "^1.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "highcharts": "^8.0.0",
     "highcharts-react-official": "^2.2.2",
     "mongodb": "^3.5.3",
